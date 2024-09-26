@@ -1,0 +1,37 @@
+# i wroemy list for the persont to type what they wan to do 
+your_do_list = []
+while True:
+    print("\nOptions:")
+    print("1. Add task ")
+    print("2. View ask ")
+    print("3. remove task ")
+    print("4. Exsit")
+    choice = input("choose an portion (1-4): ")
+
+    #here i set up the code to run my todo list 
+
+    if choice == '1':
+        task = input("enter task: ")
+        your_do_list.append(task)
+        print(f"Added: '{task}'")
+    elif choice == '2':
+        print("\nTo-Do List:")
+        for i, task in enumerate(your_do_list, start=1):
+            print(f"{i}. {task}")
+    elif choice == '3':
+        task_num = int(input("Enter task number to remove: ")) - 1
+        if 0 <= task_num < len(your_do_list):
+            removed_task = your_do_list.pop(task_num)
+            print(f"Removed: '{removed_task}'")
+        else:
+            print("Invalid task number.")
+    elif choice == '4':
+        break
+    else:
+        print("Invalid option. Try again.")
+
+print("Exiting the to-do list application.")
+# i finished my code of to do list 
+
+
+
