@@ -16,6 +16,16 @@ TASK 2:
 Write code that takes a number as input and prints whether 
 it's positive, negative, or zero using if-elif-else statements.
 """
+number = float(input("enter a number:"))
+
+if number > 0: 
+    print("postive")
+
+elif number < 0 :
+    print("negtivitve")
+
+else:
+    print("zero")
 
 
 """
